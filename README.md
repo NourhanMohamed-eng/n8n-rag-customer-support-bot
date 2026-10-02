@@ -25,15 +25,21 @@ The system consists of two core pipelines:
 
 ## 🧪 Testing & Evaluation (In-Scope vs. Out-of-Scope)
 
-![Telegram Chat Testing](Telegram_Chat.png)
+The agent was evaluated with both Arabic and English queries to verify retrieval accuracy and multilingual capabilities across different scenarios.
 
-- **In-Scope Scenarios:**
-  - **Return Policy:** Successfully retrieved exact conditions (30-day window, original packaging).
+### Arabic Interaction (Localized Support)
+![Telegram Chat Arabic](Telegram_Chat_Ar.png)
+
+### English Interaction (Multilingual Support)
+![Telegram Chat English](Telegram_Chat_EN.png)
+
+### Evaluation Summary:
+- **In-Scope Queries:**
+  - **Return Conditions:** Successfully retrieved exact conditions (30-day window, original packaging).
   - **Shipping Timelines:** Accurately provided delivery estimations based on shipping tiers.
-- **Out-of-Scope Scenarios:**
-  - **HR/Vacation Policy:** The agent checked the knowledge base, recognized it only holds store shipping/return data, and directed the user to HR without fabricating answers.
-  - **General Knowledge:** Answered correctly while explicitly notifying the user that the inquiry was outside the store policy domain.
-
+- **Out-of-Scope Queries:**
+  - **HR / Vacation Policy:** The agent checked Pinecone, verified that documents only cover shipping/returns, and directed the user to HR without fabricating answers.
+  - **General Knowledge:** Answered general questions while explicitly noting that the query falls outside the store policy domain.
 ---
 
 ## 🚀 How to Run
