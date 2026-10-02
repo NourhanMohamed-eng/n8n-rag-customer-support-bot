@@ -31,7 +31,7 @@ The agent was evaluated with both Arabic and English queries to verify retrieval
 ![Telegram Chat Arabic](Telegram_Chat_Ar.png)
 
 ### English Interaction (Multilingual Support)
-![Telegram Chat English](Telegram_Chat_EN.png)
+![Telegram Chat English](Telegram_Chat_En.png)
 
 ### Evaluation Summary:
 - **In-Scope Queries:**
